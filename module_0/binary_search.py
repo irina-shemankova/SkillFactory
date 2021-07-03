@@ -47,7 +47,7 @@ def game_core_v3(number):
         if number > predict:
             lower = predict
             predict += (upper - predict) // 2
-        elif number < predict:
+        else:
             upper = predict
             predict -= (predict - lower) // 2
     return count
